@@ -1,0 +1,76 @@
+body{
+    background: #6B2464;
+    /* cursor: url('badlogic.jpg'), default; */
+}
+
+.blurb h2{
+    color: #E9D9E9;
+    font-family: 'Yeseva One', cursive;
+}
+.blurb p{
+    color: #E5AEDF;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.97rem;
+}
+#geo h2{
+    color: #E9D9E9;
+    font-family: 'Yeseva One', cursive;
+    font-size: 3rem;
+}
+.content{
+    margin-top: 50px ;
+}
+.blurb2 h2{
+    font-size: 2.75rem;
+    font-family: 'Yeseva One', cursive;
+    color: #E9D9E9;
+}
+#mainNavbar .navbar-brand{
+    font-family: 'Yeseva One', cursive;
+    color: #E9D9E9;
+    font-size: 1.7rem;
+}
+#mainNavbar .nav-link{
+    font-family: 'Quicksand', sans-serif;
+    color:white;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+#mainNavbar .nav-link:hover{
+    font-family: 'Quicksand', sans-serif;
+    color:#D39F9C;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.navbar-nav a:hover{
+    font-family: 'Quicksand', sans-serif;
+    color: #E5AEDF;
+}
+#quote h2{
+    font-family: 'Yeseva One', cursive;
+    color: #E9D9E9;
+    font-size: 4rem;
+}
+.navbar.scrolled{
+    background:#B57DB5 ;
+    transition: background 1s;
+}
+
+@media (max-width: 1200px){
+    #quote h2{
+        font-family: 'Yeseva One', cursive;
+        color: #E9D9E9;
+        font-size: 3rem;
+    }
+    
+}
+
+#img1 img {
+    filter: blur(0);
+    transition: 0.3s ease-in-out;
+}
+#img1 img :hover{
+    filter: blur(3px);
+    transition: 0.3s ease-in-out;
+}
+

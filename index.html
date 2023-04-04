@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Yeseva+One&display=swap" rel="stylesheet">
+    
+    
+    <title>Front Page Design Portfolio -Poorvi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="row align-items-center">
+        <a href="about.html">
+            <h1 class="main " > POORVi's <br>
+                                Portfolio! <br>
+                                &hearts; </h1>
+        </a>
+    </div>
+    
+    <section id="first">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+
+    <script>
+        let tl=anime.timeline({
+            easing: 'easeOutExpo',
+            duration: 750
+        })
+        tl.add({
+            targets: 'section div',
+            width: '100%',
+            backgroundColor: '#B57DB5',
+            delay: anime.stagger(100)
+
+        })
+        tl.add({
+            targets: 'section div',
+            width: '90%',
+            backgroundColor: 'rgb(218, 190, 218)'
+        })
+        tl.add({
+            targets: 'h1',
+            top: '20%',
+            opacity: 1,
+            duration: 4000
+        }, '-=500')
+
+        let rotateMe = anime({
+            targets: 'section',
+            scaleY: '2',
+            scaleX: '2',
+            translateX: '40%',
+            rotate: '45deg',
+            duration: 5000,
+            autoplay: false
+        })
+        document.querySelector('h1').addEventListener('mouseover',() =>{
+            rotateMe.play();
+        })
+        document.querySelector('h1').addEventListener('mouseover',() =>{
+            rotateMe.play();
+        })
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+        document.getElementsByClassName("main")[0].addEventListener("click",() => {
+            let canvas = document.createElement("canvas");
+            canvas.width=600;
+            canvas.height;
+            let container = document.getElementsByClassName
+        })
+    </script>
+    
+
+</body>
+</html>
